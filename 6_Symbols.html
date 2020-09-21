@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Szybki trening JavaScript</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900&amp;subset=latin-ext" rel="stylesheet"/>
+
+    <!-- Shower Theme -->
+    <link rel="stylesheet" href="vendors/shower-ribbon/styles/screen-16x9.css"/>
+    <link rel="stylesheet" href="vendors/shower-warsawjs/styles/main.css"/>
+    <link rel="stylesheet" href="codegrid.css"/>
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="vendors/prism/prism copy.css"/>
+    <link rel="stylesheet" href="vendors/prism/custom-prism.css"/>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Szybki trening JavaScript</h1>
+        <p></p>
+    </header>
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Symbols</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Kto z was słyszał o symbolach?</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let uniquEventSymbol = Symbol('click on a button');
+                    console.log(typeof uniquEventSymbol);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let uniquEventSymbol = Symbol('click on a button');
+                    console.log(typeof uniquEventSymbol);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        symbol
+                    </code>
+                </pre>
+          
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Babel jak transpiluje symbol?</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 02</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let uniquEventSymbol = Symbol('click on a button');
+                    console.log(uniquEventSymbol.toString());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+          
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 02</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let uniquEventSymbol = Symbol('click on a button');
+                    console.log(uniquEventSymbol.toString());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Symbol(click on a button)
+                    </code>
+                </pre>
+          
+       
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    const CLICK_ON_BUTTON_ID = Symbol('click on a button');
+                    console.log(CLICK_ON_BUTTON_ID)
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    const CLICK_ON_BUTTON_ID = Symbol('click on a button');
+                    console.log(CLICK_ON_BUTTON_ID)
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Symbol(click on a button)
+                    </code>
+                </pre>
+          
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let s1 = Symbol('event TouchSreen');
+                    let s2 = Symbol('event TouchSreen');
+                    
+                    console.log(s1 === s2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+             
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let s1 = Symbol('event TouchSreen');
+                    let s2 = Symbol('event TouchSreen');
+                    
+                    console.log(s1 === s2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 05</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let s1 = Symbol.for('event TouchSreen');
+                    let s2 = Symbol.for('event Click');
+                    
+                    console.log(s1);
+                    console.log(s2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 05</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let s1 = Symbol.for('event TouchSreen');
+                    let s2 = Symbol.for('event Click');
+                    
+                    console.log(s1);
+                    console.log(s2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Symbol(event TouchSreen),Symbol(event Click)
+                    </code>
+                </pre>
+            
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let s = Symbol('event Click');
+
+                    let s1 = Symbol.for('event Click');
+                    let s2 = Symbol.for('event Click');
+                    
+                    console.log(s1 === s2);
+                    
+                    console.log(s === s1);
+                    console.log(s === s2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let s = Symbol('event Click');
+
+                    let s1 = Symbol.for('event Click');
+                    let s2 = Symbol.for('event Click');
+                    
+                    console.log(s1 === s2);
+                    
+                    console.log(s === s1);
+                    console.log(s === s2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true,false,false
+                    </code>
+                </pre>
+            
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let key = Symbol.for('event closingWindow');
+                    let description = Symbol.keyFor(key);
+                    console.log(description);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+          
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let key = Symbol.for('event closingWindow');
+                    let description = Symbol.keyFor(key);
+                    console.log(description);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        event closingWindow
+                    </code>
+                </pre>
+            
+          
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 08</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let blog = {
+                        title : 'Blog Name',
+                        [Symbol.for('Szybki trening JS')] : 'content 1',
+                        [Symbol.for('TDD z C#')] : 'content 2',
+                    };
+                    
+                    let value = blog[Symbol.for('TDD z C#')];
+                    console.log(value);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 08</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let blog = {
+                        title : 'Blog Name',
+                        [Symbol.for('Szybki trening JS')] : 'content 1',
+                        [Symbol.for('TDD z C#')] : 'content 2',
+                    };
+                    
+                    let value = blog[Symbol.for('TDD z C#')];
+                    console.log(value);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        content 2
+                    </code>
+                </pre>
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let blog = {
+                        title : 'Blog Name',
+                        [Symbol.for('Szybki trening JS')] : 'content 1',
+                        [Symbol.for('TDD z C#')] : 'content 2',
+                    };
+                    
+                    console.log(Object.getOwnPropertyNames(blog));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let blog = {
+                        title : 'Blog Name',
+                        [Symbol.for('Szybki trening JS')] : 'content 1',
+                        [Symbol.for('TDD z C#')] : 'content 2',
+                    };
+                    
+                    console.log(Object.getOwnPropertyNames(blog));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ['title']
+                    </code>
+                </pre>
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let blog = {
+                        title : 'Blog Name',
+                        [Symbol.for('Szybki trening JS')] : 'content 1',
+                        [Symbol.for('TDD z C#')] : 'content 2',
+                    };
+                    
+                    console.log(Object.getOwnPropertySymbols(blog));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+       
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let blog = {
+                        title : 'Blog Name',
+                        [Symbol.for('Szybki trening JS')] : 'content 1',
+                        [Symbol.for('TDD z C#')] : 'content 2',
+                    };
+                    
+                    console.log(Object.getOwnPropertySymbols(blog));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [Symbol(Szybki trening JS), Symbol(TDD z C#)]
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    const symbol = Symbol('s'); 
+                    console.log(symbol.description);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Symbols : 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    const symbol = Symbol('s'); 
+                    console.log(symbol.description);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        s
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Znane symbole</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 1</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let Game = function() {
+
+                    };
+                    
+                    let game = new Game();
+                    console.log(game.toString());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 1</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let Game = function() {
+
+                    };
+                    
+                    let game = new Game();
+                    console.log(game.toString());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [object Object]
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let Game = function() {
+
+                    };
+                    
+                    Game.prototype[Symbol.toStringTag] = 'Game Class Pacman';
+                    
+                    let game = new Game();
+                    console.log(game.toString());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let Game = function() {
+
+                    };
+
+                    Game.prototype[Symbol.toStringTag] = 'Game Class Pacman';
+                    
+                    let game = new Game();
+                    console.log(game.toString());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [object Game Class Pacman]
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let values1 = [1,2,3];
+                    let values2 = [4,5,6]
+                    console.log([].concat(values1).concat(values2));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+      
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let values1 = [1,2,3];
+                    let values2 = [4,5,6]
+                    console.log([].concat(values1).concat(values2));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [1,2,3,4,5,6]
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let values1 = [1,2,3]
+                    let values2 = [4,5,6];
+                    
+                    values1[Symbol.isConcatSpreadable] = false;
+                    values2[Symbol.isConcatSpreadable] = false;
+
+                    console.log([].concat(values1).concat(values2));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let values1 = [1,2,3]
+                    let values2 = [4,5,6];
+                    
+                    values1[Symbol.isConcatSpreadable] = false;
+                    values2[Symbol.isConcatSpreadable] = false;
+
+                    console.log([].concat(values1).concat(values2));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [[1,2,3],[4,5,6]]
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let values = [9,9,9];
+
+                    let sum = values + 100;
+                    console.log(sum);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let values = [9,9,9];
+
+                    let sum = values + 100;
+                    console.log(sum);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        9,9,9100
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let values = [9,9,9];
+
+                    values[Symbol.toPrimitive] = function (hint) {
+                        console.log(hint);
+                        return 27;
+                    };
+                    
+                    let sum = values + 100;
+                    console.log(sum);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Znane symbole : 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let values = [9,9,9];
+
+                    values[Symbol.toPrimitive] = function (hint) {
+                        console.log(hint);
+                        return 27;
+                    };
+                    
+                    let sum = values + 100;
+                    console.log(sum);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        'default', 127
+                    </code>
+                </pre>
+               
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide  compact">
+    <h2>Oto symbole dla iteracji:</h2>
+    <ol>
+        <li class="next">Symbol.asyncIterator</li>
+        <li class="next">Symbol.Iterator</li>
+    </ol>
+</section>
+<section class="slide  compact">
+    <h2>Oto symbole dla wyrażeń regularnych:</h2>
+    <ol>
+        <li class="next">Symbol.match</li>
+        <li class="next">Symbol.matchAll</li>
+        <li class="next">Symbol.replace</li>
+        <li class="next">Symbol.search</li>
+        <li class="next">Symbol.split</li>
+    </ol>
+</section>
+<section class="slide  compact">
+    <h2>Inne symbole to:</h2>
+    <ol>
+        <li class="next">Symbol.hasInstance</li>
+        <li class="next">Symbol.species</li>
+        <li class="next">Symbol.unscopables</li>
+        <li class="next">Symbol.toStringTag</li>
+        <li class="next">Symbol.isConcatSpreadable</li>
+        <li class="next">Symbol.toPrimitive</li>
+    </ol>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="0_tablice.html">1. Idziemy dalej do tablic</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="1_modules.html">2. Idziemy dalej do Modułów</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="3_Class.html">3. Idziemy dalej do Klas</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="4_MapSet.html">4. Idziemy dalej do Map,Set</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="5_Extensions.html">5. Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="6_Symbols.html">6. Symbols</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="7_ObjectExtensions.html">7. Object Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="8_Iterators.html">8. Iteratory</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="index.html">0. Początek</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+    <div class="progress" style="display: none;"></div>
+
+
+
+    <footer class="badge badge-top-left">
+        <a href="#" class="fullscreen">Fullscreen</a>
+    </footer>
+
+    <script src="vendors/gamepad/gamepad.js"></script>
+    <script src="vendors/shower/shower.min.js"></script>
+    <script src="vendors/shower-gamepad/shower.gamepad.js"></script>
+    <script src="vendors/shower-warsawjs/scripts/fullscreen.js"></script>
+
+    <!-- Prism.js -->
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/prism/custom-prism.js"></script>
+</body>
+</html>

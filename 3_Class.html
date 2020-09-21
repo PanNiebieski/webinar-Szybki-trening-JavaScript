@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Szybki trening JavaScript</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900&amp;subset=latin-ext" rel="stylesheet"/>
+
+    <!-- Shower Theme -->
+    <link rel="stylesheet" href="vendors/shower-ribbon/styles/screen-16x9.css"/>
+    <link rel="stylesheet" href="vendors/shower-warsawjs/styles/main.css"/>
+    <link rel="stylesheet" href="codegrid.css"/>
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="vendors/prism/prism copy.css"/>
+    <link rel="stylesheet" href="vendors/prism/custom-prism.css"/>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Szybki trening JavaScript</h1>
+        <p></p>
+    </header>
+
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Klasy</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 53px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 53px !important;">
+                    class Worker {
+
+                    }
+
+                    console.log(typeof Worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 53px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 53px !important;">
+                    class Worker {
+
+                    }
+
+                    console.log(typeof Worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        function
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 02</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 43px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 43px !important;">
+                    class Worker {
+
+                    }
+
+                    let worker = new Worker();
+                    console.log(worker instanceof Worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 02</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 43px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 43px !important;">
+                    class Worker {
+
+                    }
+
+                    let worker = new Worker();
+                    console.log(worker instanceof Worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 23px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 23px !important;">
+                    class Worker {
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                    console.log(worker.sayWork === Worker.prototype.sayWork);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 23px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 23px !important;">
+                    class Worker {
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                    console.log(worker.sayWork === Worker.prototype.sayWork);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        buduje Worker
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 05</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+
+                        constructor() {
+                            console.log('buduje Worker');
+                        },
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 05</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+
+                        constructor() {
+                            console.log('buduje Worker');
+                        },
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught SyntaxError: Unexpected token ','
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+                        let workerId = 1;
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+                        let workerId = 1;
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught SyntaxError: Unexpected identifier
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+                        let workerId = 1;
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+                        let workerId = 1;
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                        sayWork() {
+                            console.log('work work')
+                        }
+                    }
+
+                    let worker = new Worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught SyntaxError: Unexpected identifier
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 08</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 43px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 43px !important;">
+                    let worker = new Worker();
+
+                    class Worker {
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 08</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 43px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 43px !important;">
+                    let worker = new Worker();
+
+                    class Worker {
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught ReferenceError: Worker is not defined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let worker = class Worker {
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                    };
+
+                    new worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let worker = class Worker {
+                        constructor() {
+                            console.log('buduje Worker');
+                        }
+                    };
+
+                    new worker();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        buduje Worker
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let Worker = function() {
+
+                        console.log('buduje Worker');
+                    };
+
+                    let worker  = {};
+                    Worker.call(worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let Worker = function() {
+
+                        console.log('buduje Worker');
+                    };
+
+                    let worker  = {};
+                    Worker.call(worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        buduje Worker
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 11</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+
+                        constructor() {
+                            console.log('Buduje Worker');
+                        }
+                    }
+
+                    let worker  = {};
+                    Worker.call(worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 11</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Worker {
+
+                        constructor() {
+                            console.log('Buduje Worker');
+                        }
+                    }
+
+                    let worker  = {};
+                    Worker.call(worker);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught TypeError: Class constructor Worker cannot be invoked without 'new'
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 12</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    function Solider() {}
+                    console.log(window.Solider === Solider);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 12</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    function Solider() {}
+                    console.log(window.Solider === Solider);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 13</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {}
+                    console.log(window.Solider === Solider);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+      
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 13</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {}
+                    console.log(window.Solider === Solider);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 13</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {}
+                    console.log(window.Solider === Solider);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Dziedziczenie</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 14</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('Buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                    
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 14</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('Buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                    
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Buduje Solider
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 15</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        constructor(name) {
+                            console.log('buduje ' + name);
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                    
+                    }
+
+                    let s = new SoftwareSolider('Czesława');
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 15</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        constructor(name) {
+                            console.log('buduje ' + name);
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                    
+                    }
+
+                    let s = new SoftwareSolider('Czesława');
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Buduje Czesława
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 16</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 16</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        buduje Solider,buduje SoftwareSolider
+
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 17</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 17</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Must call super constructor in derived class before accessing
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 18</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        // constructor() {
+                        //     console.log('buduje Solider');
+                        // }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 18</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        // constructor() {
+                        //     console.log('buduje Solider');
+                        // }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Must call super constructor in derived class before accessing
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 19</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        // constructor() {
+                        //     console.log('buduje Solider');
+                        // }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 19</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        // constructor() {
+                        //     console.log('buduje Solider');
+                        // }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Must call super constructor in derived class before accessing
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 20</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 20</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        buduje Solider,buduje SoftwareSolider
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 22</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                    
+                    }
+
+                    let s = new SoftwareSolider();
+                    console.log(s.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 22</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                    
+                    }
+
+                    let s = new SoftwareSolider();
+                    console.log(s.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        15
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 23</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        getAttackPoints() {
+                            return 30;
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                    console.log(s.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 23</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        getAttackPoints() {
+                            return 30;
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                    console.log(s.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        30
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 24</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    class Solider {
+
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        getAttackPoints() {
+                            return super.getAttackPoints() + 16;
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                    console.log(s.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 24</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    class Solider {
+
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        getAttackPoints() {
+                            return super.getAttackPoints() + 16;
+                        }
+                    }
+
+                    let s = new SoftwareSolider();
+                    console.log(s.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        31
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 25</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let Solider ={
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    };
+                    
+                    let SoftwareSolider = {
+                        getAttackPoints() {
+                            return super.getAttackPoints() + 16;
+                        }
+                    };
+                    
+                    Object.setPrototypeOf(SoftwareSolider,Solider);
+                    console.log(SoftwareSolider.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Klasy 25</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let Solider ={
+                        getAttackPoints() {
+                            return 15;
+                        }
+                    };
+                    
+                    let SoftwareSolider = {
+                        getAttackPoints() {
+                            return super.getAttackPoints() + 16;
+                        }
+                    };
+                    
+                    Object.setPrototypeOf(SoftwareSolider,Solider);
+                    console.log(SoftwareSolider.getAttackPoints());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        31
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Właściwości i instancje klas</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 1</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            this.name = "Czesław";
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                        }
+                    }
+                    
+                    let s = new SoftwareSolider();
+                    console.log(s.name);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 1</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            this.name = "Czesław";
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                        }
+                    }
+                    
+                    let s = new SoftwareSolider();
+                    console.log(s.name);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Czesław
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            let name = "Czesław";
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                        }
+                    }
+                    
+                    let s = new SoftwareSolider();
+                    console.log(s.name);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            let name = "Czesław";
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                        }
+                    }
+                    
+                    let s = new SoftwareSolider();
+                    console.log(s.name);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        undefined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            this.name = "Czesław";
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                            this.name = this.name +  " Pfu";
+                        }
+                    }
+                    
+                    let s = new SoftwareSolider();
+                    console.log(s.name);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+                        constructor() {
+                            this.name = "Czesław";
+                        }
+                    }
+
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            super();
+                            this.name = this.name +  " Pfu";
+                        }
+                    }
+                    
+                    let s = new SoftwareSolider();
+                    console.log(s.name);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Czesław Pfu
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class Solider {
+
+                        constructor() {
+                            this.name = "Czesław";
+                        }
+                    
+                        getName() {
+                            return this.name; 
+                        }
+                    
+                        setName(val) {
+                            this.name = val;
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+              
+            </div>
+            <div class="odpowiedz">
+    
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class User {
+                        name = "Anonymous";
+                      
+                        sayHi() {
+                          console.log(`Hello, ${this.name}!`);
+                        }
+                }
+
+                new User()
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Właściwości i instancje klas 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    class User {
+                        name = "Anonymous";
+                      
+                        sayHi() {
+                          console.log(`Hello, ${this.name}!`);
+                        }
+                }
+                
+                new User()
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Hello, Anonymous!
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Czy klasa to rzeczywiście tylko funkcja</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy klasa to rzeczywiście tylko funkcja</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 23px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 23px !important;">
+                    // przepisanie klasy User na czystą funkcję
+
+                    // 1. stworzenie konstuktora funkcji
+                    function Worker(name) {
+                      this.name = name;
+                    }
+                    
+                    // 2. Dodajemy metode do prototypu
+                    Worker.prototype.sayHi = function() {
+                      console.log(this.name);
+                    };
+                    
+                    // Użycie
+                    let worker = new Worker("John");
+                    worker.sayHi();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy klasa to rzeczywiście tylko funkcja</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 23px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 23px !important;">
+                    // przepisanie klasy User na czystą funkcję
+
+                    // 1. stworzenie konstuktora funkcji
+                    function Worker(name) {
+                      this.name = name;
+                    }
+                    
+                    // 2. Dodajemy metode do prototypu
+                    Worker.prototype.sayHi = function() {
+                      console.log(this.name);
+                    };
+                    
+                    // Użycie
+                    let worker = new Worker("John");
+                    worker.sayHi();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        John
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Statyczne pola</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static getDefaultAttack() {
+                            return 1;
+                        }
+                    }
+                    
+                    console.log(Solider.getDefaultAttack());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static getDefaultAttack() {
+                            return 1;
+                        }
+                    }
+
+                    console.log(Solider.getDefaultAttack());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        1
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static getDefaultAttack() {
+                            return 1;
+                        }
+                    }
+
+                    let s = new Solider();
+                    console.log(s.getDefaultAttack());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static getDefaultAttack() {
+                            return 1;
+                        }
+                    }
+
+                    let s = new Solider();
+                    console.log(s.getDefaultAttack());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Error : Object doesn't support property or method getDefaultAttack()
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static let attack = 0;
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static let attack = 0;
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Error
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+                        static attack = 0;
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        0
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Statyczne pola 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Solider {
+     
+                    }
+
+                    Solider.attack = 0;
+                    console.log(Solider.attack);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+<section class="slide prism over bhgry">
+<div class="grid-container">
+    <div class="HeaderTitle">
+        <h2>Statyczne pola 6</h2>
+    </div>
+    <div class="PlaceCodeHere">
+        <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+            <code style="line-height: 33px !important;">
+                class Solider {
+ 
+                }
+
+                Solider.attack = 0;
+                console.log(Solider.attack);
+            </code>
+        </pre>
+    </div>
+    <div class="AnswerCode">
+        <div class="pytanie">
+            <h3>💡 Co pojawi się w konsoli ?</h3>
+        </div>
+        <div class="odpowiedz">
+            <pre style=" overflow: hidden; background-color: whitesmoke;;"
+            class="language-javascript">
+                <code>
+                    0
+                </code>
+            </pre>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="0_tablice.html">1. Idziemy dalej do tablic</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="1_modules.html">2. Idziemy dalej do Modułów</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="3_Class.html">3. Idziemy dalej do Klas</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="4_MapSet.html">4. Idziemy dalej do Map,Set</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="5_Extensions.html">5. Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="6_Symbols.html">6. Symbols</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="7_ObjectExtensions.html">7. Object Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="8_Iterators.html">8. Iteratory</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="index.html">0. Początek</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+    <div class="progress" style="display: none;"></div>
+
+
+
+    <footer class="badge badge-top-left">
+        <a href="#" class="fullscreen">Fullscreen</a>
+    </footer>
+
+    <script src="vendors/gamepad/gamepad.js"></script>
+    <script src="vendors/shower/shower.min.js"></script>
+    <script src="vendors/shower-gamepad/shower.gamepad.js"></script>
+    <script src="vendors/shower-warsawjs/scripts/fullscreen.js"></script>
+
+    <!-- Prism.js -->
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/prism/custom-prism.js"></script>
+</body>
+</html>

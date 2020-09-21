@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Szybki trening JavaScript</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900&amp;subset=latin-ext" rel="stylesheet"/>
+
+    <!-- Shower Theme -->
+    <link rel="stylesheet" href="vendors/shower-ribbon/styles/screen-16x9.css"/>
+    <link rel="stylesheet" href="vendors/shower-warsawjs/styles/main.css"/>
+    <link rel="stylesheet" href="codegrid.css"/>
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="vendors/prism/prism copy.css"/>
+    <link rel="stylesheet" href="vendors/prism/custom-prism.css"/>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Szybki trening JavaScript</h1>
+        <p></p>
+    </header>
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Map i Set</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    obj.a = 1;
+                    obj.b = 2;
+                    obj[0] = 3;
+                    console.log(obj['a']);
+                    console.log(obj['b']);
+                    console.log(obj[0]);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    obj.a = 1;
+                    obj.b = 2;
+                    obj[0] = 3;
+                    console.log(obj['a']);
+                    console.log(obj['b']);
+                    console.log(obj[0]);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        1,2,3
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript? 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    var objKey = ({id:1});
+                    obj[objKey] = 4;
+                    console.log(obj[objKey]);
+                    console.log(Object.getOwnPropertyNames(obj));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+               
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript? 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    var objKey = ({id:1});
+                    obj[objKey] = 4;
+                    console.log(obj[objKey]);
+                    console.log(Object.getOwnPropertyNames(obj));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        4, ["[object Object]"]
+                    </code>
+                </pre>
+               
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript? 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    var objKey1 = ({id:1});
+                    var objKey2 = ({id:2});
+                    var objKey3 = ({id:3});
+                    obj[objKey1] = 4;
+                    obj[objKey2] = 5;
+                    obj[objKey3] = 6;
+                    console.log(obj[objKey1]);
+                    console.log(Object.getOwnPropertyNames(obj));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript? 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    var objKey1 = ({id:1});
+                    var objKey2 = ({id:2});
+                    var objKey3 = ({id:3});
+                    obj[objKey1] = 4;
+                    obj[objKey2] = 5;
+                    obj[objKey3] = 6;
+                    console.log(obj[objKey1]);
+                    console.log(Object.getOwnPropertyNames(obj));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        6, ["[object Object]"]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript? 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    var objKey1 = ({id:1});
+                    var objKey2 = ({id:2});
+                    var objKey3 = ({id:3});
+                    obj[objKey1] = 4;
+                    obj[objKey2] = 5;
+                    obj[objKey3] = 6;
+                    console.log(obj[objKey1]);
+                    console.log(Object.getOwnPropertyNames(obj));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Czy potrzebne są słowniki w JavaScript? 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    var obj = new Object();
+                    var objKey1 = ({id:1});
+                    var objKey2 = ({id:2});
+                    var objKey3 = ({id:3});
+                    obj[objKey1] = 4;
+                    obj[objKey2] = 5;
+                    obj[objKey3] = 6;
+                    console.log(obj[objKey1]);
+                    console.log(Object.getOwnPropertyNames(obj));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        6,["[object Object]"]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Obiekty w JavaScript nie przyjmą obiektów jako kluczy</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Map i WeakMap</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let users = new Map();
+                    
+                    users.set(user1, "Programista");
+                    users.set(user2,"HR");
+                    
+                    console.log(users.get(user1));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+              
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let users = new Map();
+                    
+                    users.set(user1, "Programista");
+                    users.set(user2,"HR");
+                    
+                    console.log(users.get(user1));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Programista
+                    </code>
+                </pre>
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let users = new Map();
+                    
+                    users.set(user1, "Programista");
+                    users.set(user2),"HR";
+                    
+                    users.delete(user1);
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let users = new Map();
+                    
+                    users.set(user1, "Programista");
+                    users.set(user2),"HR";
+                    
+                    users.delete(user1);
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        1
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+              
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        2
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 05</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    let list = [...users.values()];
+                    console.log(list);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 05</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    let list = [...users.values()];
+                    console.log(list);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ["Programista","HR"]
+                    </code>
+                </pre>
+            
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    let list = [...users.entries()];
+                    console.log(list[0][1]);
+                    console.log(list[1][0]);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    let list = [...users.entries()];
+                    console.log(list[0][1]);
+                    console.log(list[1][0]);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        "Programista",{name : "Kasia"}
+                    </code>
+                </pre>
+ 
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    user1 = null;
+                    user2 = null;
+                    
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new Map(arr);
+                    user1 = null;
+                    user2 = null;
+                    
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        2
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new WeakMap(arr);
+                    user1 = null;
+                    user2 = null;
+                    
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Map : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 27px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 27px !important;">
+                    let user1 = {name : "Cezary"};
+                    let user2 = {name : "Kasia"};
+                    
+                    let arr = [
+                        [user1,"Programista"],
+                        [user2,"HR"]
+                    ];
+                    
+                    let users = new WeakMap(arr);
+                    user1 = null;
+                    user2 = null;
+                    
+                    console.log(users.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        undefined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Set i WeakSet</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set();
+
+                    games.add('Doman');
+                    games.add('Franko');
+                    games.add('Mentor');
+                    
+                    console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 01</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set();
+
+                    games.add('Doman');
+                    games.add('Franko');
+                    games.add('Mentor');
+                    
+                    console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 02</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set();
+
+                    games.add('Doman');
+                    games.add('Franko');
+                    games.add('Doman');
+                    
+                    console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 02</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set();
+
+                    games.add('Doman');
+                    games.add('Franko');
+                    games.add('Doman');
+                    
+                    console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        2
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set([
+                    'Doman',
+                    'Franko',
+                    'Misja Harolda'
+                   ]);
+                   
+                   console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 03</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set([
+                    'Doman',
+                    'Franko',
+                    'Misja Harolda'
+                   ]);
+                   
+                   console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set([
+                    'Doman',
+                    'Franko',
+                    'Misja Harolda'
+                   ]);
+                   
+                   console.log(games.has('Doman'));
+                   console.log(games.has('Mentor'));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 04</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new Set([
+                    'Doman',
+                    'Franko',
+                    'Misja Harolda'
+                   ]);
+                   
+                   console.log(games.has('Doman'));
+                   console.log(games.has('Mentor'));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true,false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!-- <section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    let posts = new Set([
+                    {id :605},
+                    {id :605},   
+                    {id :605},
+                ]);
+
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Set : 05</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+
+                </code>
+            </pre>
+        </div>
+      </div>
+</section>  -->
+
+<!-- <section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    let posts = new Set([
+                    {id :605},
+                    {id :605},   
+                    {id :605},
+                ]);
+
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Set : 05</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+3
+                </code>
+            </pre>
+        </div>
+      </div>
+</section> 
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let posts = new Set([
+                    {id :605},
+                    {id :605},   
+                    {id :605},
+                ]);
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section> -->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let posts = new Set([
+                    {id :605},
+                    {id :605},   
+                    {id :605},
+                ]);
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 06</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let posts = new Set([
+                    {id :605},
+                    {id :605},   
+                    {id :605},
+                ]);
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                let posts = new Set([
+                    0,
+                    '0',   
+                    false,
+                ]);
+                
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 07</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                let posts = new Set([
+                    0,
+                    '0',   
+                    false,
+                ]);
+
+                console.log(posts.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 08</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new WeakSet([
+                    'Franko',
+                    'Misja Harolda'
+                   ]);
+                   
+                   console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 08</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let games = new WeakSet([
+                    'Franko',
+                    'Misja Harolda'
+                   ]);
+                   
+                   console.log(games.size);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        undefined
+                    </code>
+                </pre>
+     
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let p1 = {name:'Doman'};
+                    let p2 = {name:'Franko');
+                    
+                    let games = new WeakSet([p1,p2]);
+                    
+                    console.log(games.has(p1));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 09</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let p1 = {name:'Doman'};
+                    let p2 = {name:'Franko');
+                    
+                    let games = new WeakSet([p1,p2]);
+                    
+                    console.log(games.has(p1));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let p1 = {name:'Doman'};
+                    let p2 = {name:'Franko');
+                    
+                    let games = new WeakSet([p1,p2]);
+                    
+                    p1 = null;
+                    console.log(games.has(p1));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Set : 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    let p1 = {name:'Doman'};
+                    let p2 = {name:'Franko'};
+                    
+                    let games = new WeakSet([p1,p2]);
+                    
+                    p1 = null;
+                    console.log(games.has(p1));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!-- 
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Dziedziczenie po tablicy</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Dziedziczenie po Tablicy</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Games extends Array {
+                    }
+                    
+                    let a = Games.from(
+                    ['Blitz Bombers','Shadow Of the Beast','Cannon Fodder']);
+                    
+                    console.log(a instanceof Games);
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Dziedziczenie po Tablicy</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Games extends Array {
+                    }
+                    
+                    let a = Games.from(
+                    ['Blitz Bombers','Shadow Of the Beast','Cannon Fodder']);
+                    
+                    console.log(a instanceof Games);
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+              
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Dziedziczenie po Tablicy 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Games extends Array {
+                    }
+                    
+                    let a = Games.from(
+                    ['Blitz Bombers','Shadow Of the Beast','Cannon Fodder']);
+                    let newArray = a.reverse();
+                    
+                    console.log(newArray  instanceof Games);
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+              
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Dziedziczenie po Tablicy 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 33px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 33px !important;">
+                    class Games extends Array {
+                    }
+                    
+                    let a = Games.from(
+                    ['Blitz Bombers','Shadow Of the Beast','Cannon Fodder']);
+                    let newArray = a.reverse();
+                    
+                    console.log(newArray  instanceof Games);
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    class Games extends Array {
+
+                        getByStartLetter(chart) {
+                    
+                            return this.filter(x => x[0] === chart);
+                        }
+                    
+                        getDictionary() {
+                           var letters = this.map((game) => 
+                                ({letter:game[0],game:game}));
+                           return letters;
+                        }
+                    }
+                    
+                    let a = Games.from(
+                    ['Blitz Bombers','Shadow Of the Beast','Cannon Fodder']);
+                    
+                    console.log(a.getByStartLetter('S'));
+                    console.log(a.getDictionary());
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Dziedziczenie po Tablicy 3</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    Games ["Shadow Of the Beast"]
+
+                    Games(3) [{…}, {…}, {…}]
+                    
+                    0: {letter: "B", game: "Blitz Bombers"}
+                    
+                    1: {letter: "S", game: "Shadow Of the Beast"}
+                    
+                    2: {letter: "C", game: "Cannon Fodder"}
+                </code>
+            </pre>
+        </div>
+      </div>
+</section>  -->
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="0_tablice.html">1. Idziemy dalej do tablic</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="1_modules.html">2. Idziemy dalej do Modułów</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="3_Class.html">3. Idziemy dalej do Klas</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="4_MapSet.html">4. Idziemy dalej do Map,Set</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="5_Extensions.html">5. Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="6_Symbols.html">6. Symbols</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="7_ObjectExtensions.html">7. Object Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="8_Iterators.html">8. Iteratory</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="index.html">0. Początek</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+    <div class="progress" style="display: none;"></div>
+
+
+
+    <footer class="badge badge-top-left">
+        <a href="#" class="fullscreen">Fullscreen</a>
+    </footer>
+
+    <script src="vendors/gamepad/gamepad.js"></script>
+    <script src="vendors/shower/shower.min.js"></script>
+    <script src="vendors/shower-gamepad/shower.gamepad.js"></script>
+    <script src="vendors/shower-warsawjs/scripts/fullscreen.js"></script>
+
+    <!-- Prism.js -->
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/prism/custom-prism.js"></script>
+</body>
+</html>

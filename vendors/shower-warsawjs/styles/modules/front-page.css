@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.slide.front-page {
+    background: url(../../images/panoramatail2.png) repeat-x #fff 0 100%;
+    background-size: 20%;
+    padding: 70px 40px 0;
+}
+
+.slide.front-page .logo {
+    width: 200px;
+    float: left;
+}
+
+.slide.front-page .details {
+    float: left;
+    width: calc(100% - 200px);
+    /* border-left: 3px solid #f7302f; */
+    padding: 0 0 10px 50px;
+    margin-top: 5px;
+}
+
+.slide.front-page .details h2 {
+    color: #000;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0 0 10px 0;
+}

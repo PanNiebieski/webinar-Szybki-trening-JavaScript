@@ -1,0 +1,4688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Szybki trening JavaScript</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900&amp;subset=latin-ext" rel="stylesheet"/>
+
+    <!-- Shower Theme -->
+    <link rel="stylesheet" href="vendors/shower-ribbon/styles/screen-16x9.css"/>
+    <link rel="stylesheet" href="vendors/shower-warsawjs/styles/main.css"/>
+    <link rel="stylesheet" href="codegrid.css"/>
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="vendors/prism/prism copy.css"/>
+    <link rel="stylesheet" href="vendors/prism/custom-prism.css"/>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Szybki trening JavaScript</h1>
+        <p></p>
+    </header>
+
+    <section class="slide front-page">
+
+        <div class="details">
+            <!-- 1. Avatar -->
+            <img src="images/my-avatar.jpg" alt="Speaker"/>
+
+            <!-- 2. Speaker -->
+            <h2>Cezary Walenciuk</h2>
+
+            <!-- 3. Presentation title -->
+            <h2><strong>Szybki trening JavaScript</strong></h2>
+
+            <!-- 4. Presentation date -->
+            <h2>2020-06-23</h2>
+
+            <!-- 5. Contact the speaker -->
+            <h2><a href="https://twitter.com/WalenciukC">@walenciukC</a></h2>
+        </div>
+    </section>
+    <section class="slide prism over bhgry" >
+        <div class="Main-grid-container">
+            <div class="Main-Background1 ">
+            </div>
+            <div class="Main-Text">
+                <h2>Na ile Ty znasz JavaScript?</h2>
+            </div>
+            <div class="Main-Background2">
+          </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/02.jpg" alt="meme">
+            <figcaption class="white">Copyright © 2019 Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/03.png" alt="meme">
+            <figcaption class="white">Copyright © 2019 Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/01.png" alt="meme">
+            <figcaption class="white">Copyright © 2019 Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide prism over bhgry" >
+        <div class="Main-grid-container ">
+            <div class="Main-Background1 ">
+            </div>
+            <div class="Main-Text">
+                <h2 >Historia JavaScript</h2>
+            </div>
+            <div class="Main-Background2">
+          </div>
+    </section>
+    <section class="slide prism over bhgry" >
+        <div class="Main-grid-container ">
+            <div class="Main-Background1 ">
+            </div>
+            <div class="Main-Text">
+                <a target="blank" href="https://kangax.github.io/compat-table/es2016plus/">
+                    https://kangax.github.io/compat-table/es2016plus/</a>
+            </div>
+            <div class="Main-Background2">
+          </div>
+    </section>
+    <section class="slide prism over bhgry" >
+        <div class="Main-grid-container ">
+            <div class="Main-Background1 ">
+            </div>
+            <div class="Main-Text">
+                <h2>Historia JavaScript</h2>
+            </div>
+            <div class="Main-Background2">
+          </div>
+    </section>
+    <section class="slide prism over bhgry" >
+        <div class="Main-grid-container ">
+            <div class="Main-Background1 ">
+            </div>
+            <div class="Main-Text">
+                <h2>Na czym polega nasz trening JavaScript?</h2>
+            </div>
+            <div class="Main-Background2">
+          </div>
+    </section>
+    <section class="slide  compact">
+        <h2>O czym planuje mówić:</h2>
+        <ol>
+            <li class="next">let i var oraz block scoping</li>
+            <li class="next">Funkcje strzałkowe</li>
+            <li class="next">Domyślne wartości w funkcjach</li>
+            <li class="next">Rest i Spread</li>
+            <li class="next">for..in</li>
+            <li class="next">Definiowanie obiektów</li>
+            <li class="next">Dekonstrukcja</li>
+        </ol>
+    </section>
+
+    <section class="slide prism over bhgry" >
+        <div class="Main-grid-container ">
+            <div class="Main-Background1 ">
+            </div>
+            <div class="Main-Text">
+                <h2>Rozgrzewka</h2>
+            </div>
+            <div class="Main-Background2">
+          </div>
+    </section>
+
+<!--#region rozgrzeka_1  -->
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2>Rozgrzewka 1</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                    <code style="line-height: 60px !important;">
+                        console.log(null == undefined);
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli ?</h3>
+                </div>
+                <div class="odpowiedz">
+
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle">
+                <h2>Rozgrzewka 1</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                    <code style="line-height: 60px !important;">
+                        console.log(null == undefined);
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3>💡 Co pojawi się w konsoli ?</h3>
+                </div>
+                <div class="odpowiedz">
+                    <pre style="font-size: 30px;overflow: hidden; background-color: whitesmoke;;"
+                    class="language-javascript">
+                        <code >
+                            true
+                        </code>
+                    </pre>
+                </div>
+            </div>
+          </div>
+    </section>
+
+<!--#endregion -->
+<!--#region rozgrzeka_2-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Rozgrzewka 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    console.log(false == '0');
+                    console.log(false === '0');
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Rozgrzewka 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    console.log(false == '0');
+                    console.log(false === '0');
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code >
+                        true, false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+<!--#region rozgrzeka_3-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Rozgrzewka 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    (true + false) >= 2 - true;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Rozgrzewka 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    (true + false) >= 2 - true;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code >
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+
+<!--#region rozgrzeka_4-->
+<!-- <section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    console.log();
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Rozgrzewka 4</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+        
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    console.log();
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Rozgrzewka 4</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    true, false
+                </code>
+            </pre>
+        </div>
+      </div>
+</section> -->
+<!--#endregion -->
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: let i var</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<!--#region Jak to jest z tym var?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Jak to jest z tym var?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    console.log(personId);
+                    var personId = 11;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:01:Jak to jest z tym var?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    console.log(personId);
+                    var personId = 11;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code >
+                        undefined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+
+
+
+
+
+<!--#region Jak to jest z tym let?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:02:Jak to jest z tym let?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    console.log(personId);
+                    let personId = 11;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:02:Jak to jest z tym let?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    console.log(personId);
+                    let personId = 11;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code >
+                        Uncaught ReferenceError: personId is not defined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+
+
+
+<!--#region Jak to jest z tym let?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:03:Jak to jest z tym let?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    let personId = 13;
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:03:Jak to jest z tym let?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    let personId = 13;
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code >
+                        13
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+
+
+
+
+<!--#region Jak to jest z tym let?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:04:Jak to jest z tym let?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    let personId
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:04:Jak to jest z tym let?</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 70px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 70px !important;">
+                    let personId
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        undefined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+
+<!--#region Przestrzeń działania kodu?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:05:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    let personId = 15;
+                    {
+                       let personId = 8000;
+                    }
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:05:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    let personId = 15;
+                    {
+                       let personId = 8000;
+                    }
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        15
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<!--#endregion -->
+
+
+
+<!--#region Przestrzeń działania kodu?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:06:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    {
+                      let personId = 9000;
+                    }
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:05:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    {
+                      let personId = 9000;
+                    }
+                    console.log(personId);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ReferenceError: personId is not defined
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<!--#region Przestrzeń działania kodu?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:06:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 50px !important;">
+                    function editPersonId() {
+                        personId = 16;
+                    }
+
+                    let personId = null;
+                    editPersonId();
+                    console.log(personId)
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:06:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 50px !important;">
+                    function editPersonId() {
+                        personId = 16;
+                    }
+
+                    let personId = null;
+                    editPersonId();
+                    console.log(personId)
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        16
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!--#region Przestrzeń działania kodu?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:07:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 50px !important;">
+                    let id = 17;
+
+                    for (let id = 0;id < 5;id++)
+                    {
+
+                    }
+                    console.log(id);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:07:Przestrzeń działania kodu</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 50px !important;">
+                    let id = 17;
+
+                    for (let id = 0;id < 5;id++)
+                    {
+
+                    }
+                    console.log(id);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        17
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<!--#region Domkniecia i var?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:08:Domkniecia i var</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let editFunctions = [];
+
+                    for (var i = 5; i < 10; i++) {
+                       editFunctions.push(function() {return i;});
+                    }
+                    
+                    console.log(editFunctions[0]());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:08:Domkniecia i var</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let editFunctions = [];
+
+                    for (var i = 5; i < 10; i++) {
+                       editFunctions.push(function() {return i;});
+                    }
+
+                    console.log(editFunctions[0]());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        10
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<!--#region Domkniecia i var?-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:09:Domkniecia i let</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let editFunctions = [];
+
+                    for (let i = 5; i < 10; i++) {
+                       editFunctions.push(function() {return i;});
+                    }
+                    
+                    console.log(editFunctions[0]());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:08:Domkniecia i let</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let editFunctions = [];
+
+                    for (let i = 5; i < 10; i++) {
+                       editFunctions.push(function() {return i;});
+                    }
+                    
+                    console.log(editFunctions[0]());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        5
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!--#region Domkniecia i var?-->
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: const</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<!--#region stałe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:10:Stałe</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const PI = 3.14;
+                    const ADDRESS = '10.0.0.1';
+                    console.log(PI);
+                    console.log(ADDRESS);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:10:Stałe</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const PI = 3.14;
+                    const ADDRESS = '10.0.0.1';
+                    console.log(PI);
+                    console.log(ADDRESS);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3.14, 10.0.0.1
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<!--#region stałe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:11:Stałe 2 </h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const PI;
+                    const ADDRESS;
+                    console.log(PI);
+                    console.log(ADDRESS);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:11:Stałe 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const PI;
+                    const ADDRESS;
+                    console.log(PI);
+                    console.log(ADDRESS);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught SyntaxError: Missing initializer in const declaration
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!--#region stałe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:12:Stałe czy można je zmienić</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const ADDRESS = 'localhost';
+                    ADDRESS = '10.0.0.1'
+                    console.log(ADDRESS);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:12:Stałe czy można je zmienić</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const ADDRESS = 'localhost';
+                    ADDRESS = '10.0.0.1'
+                    console.log(ADDRESS);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught TypeError: Assignment to constant variable.
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<!--#region stałe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:13:Przestrzeń blokowa</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const PI= 3.14;
+
+                    if (PI > 0) {
+                        const PI = -3.14;
+                    }
+                    console.log(PI);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:13:Przestrzeń blokowa</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const PI= 3.14;
+
+                    if (PI > 0) {
+                        const PI = -3.14;
+                    }
+                    console.log(PI);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3.14
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<!--#region stałe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:14:Obiekty w stałych</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const myConstObject = {mutableProperty: 10};
+                    myConstObject.mutableProperty = 20; 
+                    
+                    console.log(myConstObject.mutableProperty); 
+                    
+                    const myConstArray = [30];
+                    myConstArray.push(40);
+                    
+                    console.log(myConstArray); 
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:14:Obiekty w stałych</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    const myConstObject = {mutableProperty: 10};
+                    myConstObject.mutableProperty = 20; 
+                    
+                    console.log(myConstObject.mutableProperty); 
+                    
+                    const myConstArray = [30];
+                    myConstArray.push(40);
+                    
+                    console.log(myConstArray); 
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        20, [30,40]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: Funkcje strzałkowe</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<!--#region  Funkcje strzałkowe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:15:Funkcje strzałkowe</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPhone = () => "9"
+                    console.log(typeof getPhone);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:15:Funkcje strzałkowe</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPhone = () => "9"
+                    console.log(typeof getPhone);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        function
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<!--#region  Funkcje strzałkowe-->
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:16:Funkcje strzałkowe 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPhone = () => "9"
+                    console.log(getPhone());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:16:Funkcje strzałkowe 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPhone = () => "9"
+                    console.log(getPhone());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        9
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:17:Funkcje strzałkowe 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPhone =
+                    version => "Note " + version
+                    console.log(getPhone(10));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:17:Funkcje strzałkowe 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 60px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPhone =
+                    version => "Note " + version
+                    console.log(getPhone(10));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Note 10
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:18:Funkcje strzałkowe 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPoints = 
+                    (count,lifes) => count + (200 * lifes); 
+
+                    console.log(getPoints(9000,2)); 
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:18:Funkcje strzałkowe 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    var getPoints = 
+                    (count,lifes) => count + (200 * lifes); 
+
+                    console.log(getPoints(9000,2)); 
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        9400
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:19:Funkcje strzałkowe 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var getPoints = (count,lifes) => {
+                        var lifeby  = lifes * 200;
+                        return count + lifeby;
+                     }
+                     console.log(getPoints(9000,2))
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:19:Funkcje strzałkowe 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var getPoints = (count,lifes) => {
+                        var lifeby  = lifes * 200;
+                        return count + lifeby;
+                     }
+                     console.log(getPoints(9000,2))
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        9400
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:20:Funkcje strzałkowe 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    document.addEventListener('click', function() {
+                        console.log(this);
+                     });
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:20:Funkcje strzałkowe 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    document.addEventListener('click', function() {
+                        console.log(this);
+                     });
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        #document
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:21:Funkcje strzałkowe 7</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    document.addEventListener('click',
+                    () => console.log(this));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:21:Funkcje strzałkowe 7</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    document.addEventListener('click',
+                    () => console.log(this));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:22:Funkcje strzałkowe 8</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            console.log(this);
+                        }
+                    };
+                    post.read();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:22:Funkcje strzałkowe 8</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            console.log(this);
+                        }
+                    };
+                    post.read();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        {postId: 604, read: ƒ}
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:23:Funkcje strzałkowe 9</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var post = {
+                        postId: 604,
+                        read: () => console.log(this)
+                    };
+                    post.read();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:23:Funkcje strzałkowe 9</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var post = {
+                        postId: 604,
+                        read: () => console.log(this)
+                    };
+                    post.read();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:24:Funkcje strzałkowe 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            return () => console.log(this.postId);
+                        }
+                    };
+                    post.read()();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:24:Funkcje strzałkowe 10</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            return () => console.log(this.postId);
+                        }
+                    };
+                    post.read()();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        604
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:25:Funkcje strzałkowe 11</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            return () => console.log(this.postId);
+                        }
+                    };
+                    
+                    var newPost = {
+                        postId: 198,
+                    };
+                    post.read().call(newPost);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:25:Funkcje strzałkowe 11</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            return () => console.log(this.postId);
+                        }
+                    };
+                    
+                    var newPost = {
+                        postId: 198,
+                    };
+                    post.read().call(newPost);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        604
+                    </code>
+                </pre>
+            
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:26:Funkcje strzałkowe 12</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            return () => console.log(this.postId);
+                        }
+                    };
+                    
+                    var newPost = {
+                        postId: 198,
+                    };
+                    post.read().bind(newPost)();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:26:Funkcje strzałkowe 12</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var post = {
+                        postId: 604,
+                        read: function () {
+                            return () => console.log(this.postId);
+                        }
+                    };
+                    
+                    var newPost = {
+                        postId: 198,
+                    };
+                    post.read().bind(newPost)();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        604
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:27:Funkcje strzałkowe 13</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 50px !important;">
+                    var getScore = ()
+                    => 9000;
+                    
+                    console.log(typeof getScore);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:27:Funkcje strzałkowe 13</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 50px !important;">
+                    var getScore = ()
+                    => 9000;
+                    
+                    console.log(typeof getScore);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught SyntaxError: Unexpected token '=>'
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:28:Funkcje strzałkowe 14</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var getScore = () => 9000;
+
+                    console.log(getScore.hasOwnProperty("prototype"));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:28:Funkcje strzałkowe 14</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var getScore = () => 9000;
+
+                    console.log(getScore.hasOwnProperty("prototype"));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        false
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: Domyślne wartości w parametrach</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:29:Domyślne wartości w parametrach</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var getGame = function(id = 0,type="none") {
+
+                        console.log(id + ", " + type);
+                    }
+                    
+                    getGame(undefined, "RPG");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:29:Domyślne wartości w parametrach</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var getGame = function(id = 0,type="none") {
+
+                        console.log(id + ", " + type);
+                    }
+                    
+                    getGame(undefined, "RPG");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        0,RPG
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:30:Domyślne wartości w parametrach 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var getTotalScore = function(score = 0,lives = 0, 
+                    addscore = lives * 200) {
+                    
+                        console.log(score + addscore);
+                    
+                    };
+                    getTotalScore(5000,2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:30:Domyślne wartości w parametrach 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var getTotalScore = function(score = 0,lives = 0, 
+                    addscore = lives * 200) {
+                    
+                        console.log(score + addscore);
+                    
+                    };
+                    getTotalScore(5000,2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        5400
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:31:Domyślne wartości w parametrach 3 : score + addscore</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var generatePoints = () => 200;
+
+                    var getTotalScore = function(score = 0,lives = 0, 
+                    addscore = lives *  generatePoints()) {
+                    
+                        console.log(score + addscore);
+                    
+                    };
+                    getTotalScore(5000,2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:31:Domyślne wartości w parametrach 3 : score + addscore</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var generatePoints = () => 200;
+
+                    var getTotalScore = function(score = 0,lives = 0, 
+                    addscore = lives *  generatePoints()) {
+                    
+                        console.log(score + addscore);
+                    
+                    };
+                    getTotalScore(5000,2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        5400
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:32:Domyślne wartości w parametrach 4 : arguments.length</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var generatePoints = () => 200;
+
+                    var getTotalScore = function(score = 0,lives = 0, 
+                    addscore = lives *  generatePoints()) {
+                    
+                        console.log(arguments.length);
+                    
+                    };
+                    getTotalScore(5000,2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:32:Domyślne wartości w parametrach 4 : arguments.length</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    var generatePoints = () => 200;
+
+                    var getTotalScore = function(score = 0,lives = 0, 
+                    addscore = lives *  generatePoints()) {
+                    
+                        console.log(arguments.length);
+                    
+                    };
+                    getTotalScore(5000,2);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        2
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:33:Domyślne wartości w parametrach 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var getName = function(name = defaultname, defaultname = "MR"){
+                        console.log(defaultname + " " + name);
+                    }
+                    
+                    getName();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:33:Domyślne wartości w parametrach 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var getName = function(name = defaultname, defaultname = "MR"){
+                        console.log(defaultname + " " + name);
+                    }
+                    
+                    getName();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught ReferenceError: Cannot access 'defaultname' before initialization
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:34:Domyślne wartości w parametrach 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var getName = function(name = defaultname, defaultname = "MR"){
+                        console.log(defaultname + " " + name);
+                    }
+                    
+                    getName("Cezary");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:34:Domyślne wartości w parametrach 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var getName = function(name = defaultname, defaultname = "MR"){
+                        console.log(defaultname + " " + name);
+                    }
+                    
+                    getName("Cezary");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        MR Cezary
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:35:Domyślne wartości w parametrach 7</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var getName = new Function("name = 'Cezary'","return name");
+                    console.log(getName());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:35:Domyślne wartości w parametrach 7</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var getName = new Function("name = 'Cezary'","return name");
+                    console.log(getName());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Cezary
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Rest i Spread</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:36:Rest</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(tags instanceof Array);
+
+                    };
+                    showTags(777,"Java","Wzorce-Projektowe","C#");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:36:Rest</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(tags instanceof Array);
+
+                    };
+                    showTags(777,"Java","Wzorce-Projektowe","C#");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        true
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:37:Rest 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(tags);
+                    
+                    };
+                    showTags(777,"Java","Wzorce-Projektowe","C#");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:37:Rest 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(tags);
+                    
+                    };
+                    showTags(777,"Java","Wzorce-Projektowe","C#");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ["Java", "Wzorce-Projektowe", "C#"]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:38:Rest 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(tags);
+                    
+                    };
+                    showTags(777);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:38:Rest 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(tags);
+                    
+                    };
+                    showTags(777);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        []
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:39:Rest 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){};
+                    console.log(showTags.length);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:39:Rest 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){};
+                    console.log(showTags.length);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        1
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:40:Rest 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(arguments.length);
+                    
+                    };
+                    showTags(777,"Java","Wzorce-Projektowe","C#");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:40:Rest 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var showTags = function (postId, ...tags){
+
+                        console.log(arguments.length);
+                    
+                    };
+                    showTags(777,"Java","Wzorce-Projektowe","C#");
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        4
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:41:Rest 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var showTags = new Function("...tags", "return tags;");
+
+                    console.log(showTags("Java","Wzorce-Projektowe","C#"));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:41:Rest 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 25px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 25px !important;">
+                    var showTags = new Function("...tags", "return tags;");
+
+                    console.log(showTags("Java","Wzorce-Projektowe","C#"));
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ["Java", "Wzorce-Projektowe", "C#"]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:43:Spread</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [11,12,33,44,13,45];
+                    var maxValue = Math.max(...values);
+                    console.log(maxValue);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:43:Spread</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [11,12,33,44,13,45];
+                    var maxValue = Math.max(...values);
+                    console.log(maxValue);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        45
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:44:Spread 2 </h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [11,12,33,44,13,45];
+                    var valuesArray = [...values];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:44:Spread 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [11,12,33,44,13,45];
+                    var valuesArray = [...values];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [11,12,33,44,13,45]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:44:Spread 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [,,,,];
+                    var valuesArray = [...values];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:44:Spread 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [,,,,];
+                    var valuesArray = [...values];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [undefined, undefined, undefined, undefined]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:45:Spread 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [1,2,3,4,];
+                    var valuesArray = [...values];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:45:Spread 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var values = [1,2,3,4,];
+                    var valuesArray = [...values];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [1,2,3,4]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:46:Spread 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var valuesArray = [...[1,2,3,4,]];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:46:Spread 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var valuesArray = [...[1,2,3,4,]];
+                    console.log(valuesArray );
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        [1, 2, 3, 4]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:47:Spread 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var maxNumber = Math.max(..."987654321");
+                    console.log(maxNumber);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:47:Spread 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var maxNumber = Math.max(..."987654321");
+                    console.log(maxNumber);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        9
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:48:Spread 7</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var wordsArray = ["CEZ",..."WAL",
+                    "PO SCIANIE"];
+                    console.log(wordsArray);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:48:Spread 7</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 45px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 45px !important;">
+                    var wordsArray = ["CEZ",..."WAL",
+                    "PO SCIANIE"];
+                    console.log(wordsArray);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ["CEZ", "W", "A", "L", "PO SCIANIE"]
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: Definiowanie obiektów</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:50: Definiowanie obiektów</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var price = 7.99, tax = 0.2;
+
+                    var product = {
+                        price,
+                        tax,
+                        "calulacte priceWithTax"() {
+                            return this.price * this.tax;
+                        }
+                    
+                    }; 
+                    
+                    console.log(product["calulacte priceWithTax"]());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:50: Definiowanie obiektów</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var price = 7.99, tax = 0.2;
+
+                    var product = {
+                        price,
+                        tax,
+                        "calulacte priceWithTax"() {
+                            return this.price * this.tax;
+                        }
+                    
+                    }; 
+                    
+                    console.log(product["calulacte priceWithTax"]());
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        1.598
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+  
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:51: Definiowanie obiektów 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var field = 'dynamicPrice';
+                    var field2 = 'dynamicTax'
+                    var price = 7.99, tax = 0.2;
+                    var product = {
+                        [field] : price,
+                        [field2 ] : tax ,
+                    }; 
+                    console.log(product);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:51: Definiowanie obiektów 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var field = 'dynamicPrice';
+                    var field2 = 'dynamicTax'
+                    var price = 7.99, tax = 0.2;
+                    var product = {
+                        [field] : price,
+                        [field2 ] : tax ,
+                    }; 
+                    console.log(product);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        {dynamicPrice: 7.99, dynamicTax: 0.2}
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:52: Definiowanie obiektów 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var field = 'dynamicPrice';
+                    var field2 = 'dynamicTax'
+                    var price = 7.99, tax = 0.2;
+                    var product = {
+                        [field + "-1"] : price,
+                        [field2 + "-1"] : tax ,
+                    }; 
+                    console.log(product);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:52: Definiowanie obiektów 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    var field = 'dynamicPrice';
+                    var field2 = 'dynamicTax'
+                    var price = 7.99, tax = 0.2;
+                    var product = {
+                        [field + "-1"] : price,
+                        [field2 + "-1"] : tax ,
+                    };
+                    console.log(product);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        {dynamicPrice-1: 7.99, dynamicTax-1: 0.2}
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: pętla..of</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:53: Pętla..of</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var codes = "CZEF";
+                    for (var code of codes)
+                    {
+                        console.log(code);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:53: Pętla..of</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var codes = "CZEF";
+                    for (var code of codes)
+                    {
+                        console.log(code);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        C,Z,E,F
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:54: Pętla..of 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var post = {id:11,title:"m",content:"l"};
+
+                    for (var p of post)
+                    {
+                        console.log(p);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:54: Pętla..of 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var post = {id:11,title:"m",content:"l"};
+
+                    for (var p of post)
+                    {
+                        console.log(p);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught TypeError: post is not iterable
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:51: Pętla..of 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var obj = {
+                        name: "Simon",
+                        age: "20",
+                    }
+                    
+                    for(var propt in obj){
+                        console.log(propt + ': ' + obj[propt]);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:53: Pętla..of 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    var obj = {
+                        name: "Simon",
+                        age: "20",
+                    }
+
+                    for(var propt in obj){
+                        console.log(propt + ': ' + obj[propt]);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        name: Simon, age :20
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Template Literal</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:52: Template Literal</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let numer = 888;
+                    console.log('Numer : ${numer}');
+                    let numer2 = '888';
+                    console.log('Numer : ${numer2}');
+                    
+                    let numer3 = 999;
+                    console.log(`Numer : ${numer3}`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:52: Template Literal</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let numer = 888;
+                    console.log('Numer : ${numer}');
+                    let numer2 = '888';
+                    console.log('Numer : ${numer2}');
+                    
+                    let numer3 = 999;
+                    console.log(`Numer : ${numer3}`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Numer : ${numer},Numer : ${numer2}, Numer : 999
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    let what = `K
+                    O
+                    C
+                    H
+                    A JAVASCRIPT`;
+                    console.log(what);
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Składnia ES6:53: Template Literal</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+        
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 50px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 60px !important;">
+                    let what = `K
+                    O
+                    C
+                    H
+                    A JAVASCRIPT`;
+                    console.log(what);
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Składnia ES6:53: Template Literal</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    K
+                    O
+                    C
+                    H
+                    A JAVASCRIPT
+                </code>
+            </pre>
+        </div>
+      </div>
+</section> 
+
+
+
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:54: Template Literal 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    function showCommand(command) {
+                        let ile = 3;
+                        console.log(command);
+                    }
+                    let ile = 20;
+                    showCommand(`Kup ${ile} jabłek`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:54: Template Literal 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    function showCommand(command) {
+                        let ile = 3;
+                        console.log(command);
+                    }
+                    let ile = 20;
+                    showCommand(`Kup ${ile} jabłek`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        20
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    function process(segments,...textes) {
+                        console.log(segments);
+                        console.log(textes);
+                    }
+                    
+                    let headerText = "Blog Stefana";
+                    let title = "Co nowego ES2030";
+                    process `-> ${headerText} wpisy ${title} <-`;
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Składnia ES6:55: Template Literal 4</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+        
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="vertical-grid-container">
+        <div class="vertical-PlaceCodeHere">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    function process(segments,...textes) {
+                        console.log(segments);
+                        console.log(textes);
+                    }
+                    
+                    let headerText = "Blog Stefana";
+                    let title = "Co nowego ES2030";
+                    process `-> ${headerText} wpisy ${title} <-`;
+                </code>
+            </pre>
+        </div>
+        <div class="vertical-HeaderText">
+            <h2>Składnia ES6:55: Template Literal 4</h2>
+        </div>
+        <div class="vertical-Question"> <h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="vertical-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    ["-> ", " wpisy ", " <-"]
+                    ["Blog Stefana", 
+                    "Co nowego ES2030"]
+                </code>
+            </pre>
+        </div>
+      </div>
+</section> 
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Składnia ES6: Dekonstrukcja</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:56: Dekonstrukcja</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let programmersSalary = 
+                    [3000,5000,7200,8500,10000,15000];
+
+                    let [lowest,low,avarage,ok,yes,hight] = 
+                    programmersSalary;
+
+                    console.log(lowest);
+                    console.log(avarage);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:56: Dekonstrukcja</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                     let programmersSalary = 
+                    [3000,5000,7200,8500,10000,15000];
+
+                    let [lowest,low,avarage,ok,yes,hight] = 
+                    programmersSalary;
+                    
+                    console.log(lowest);
+                    console.log(avarage);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        3000, 7200
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:57: Dekonstrukcja 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let programmersSalary = 
+                    [3000,5000,7200,8500,10000,15000];
+
+                    let [lowest,,,,,hight] = programmersSalary;
+                    console.log(hight);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:57: Dekonstrukcja 2</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let programmersSalary = 
+                    [3000,5000,7200,8500,10000,15000];
+                    
+                    let [lowest,,,,,hight] = programmersSalary;
+                    console.log(hight);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        15000
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:58: Dekonstrukcja 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    let programmersSalary = 
+                    [3000,5000,7200,[8500,10000,15000]];
+
+                    let [lowest,low,avarage,
+                        [seniorlowest,senioravarage, seniorHigh]] =
+                     programmersSalary;
+                     
+                    console.log(seniorlowest);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:58: Dekonstrukcja 3</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 35px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 35px !important;">
+                    let programmersSalary = 
+                    [3000,5000,7200,[8500,10000,15000]];
+
+                    let [lowest,low,avarage,
+                        [seniorlowest,senioravarage, seniorHigh]] =
+                     programmersSalary;
+                     
+                    console.log(seniorlowest);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        8500
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:60: Dekonstrukcja 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let game = {
+                        title: 'Mortal Kombat 2',
+                        desc: 'bla bla',
+                        platform: 'Amiga'
+                    };
+                    
+                    let {title,desc} = game;
+                    console.log(title);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:60: Dekonstrukcja 4</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let game = {
+                        title: 'Mortal Kombat 2',
+                        desc: 'bla bla',
+                        platform: 'Amiga'
+                    };
+                    
+                    let {title,desc} = game;
+                    console.log(title);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Mortal Kombat 2
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:60: Dekonstrukcja 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let [title,desc] = undefined;
+                    console.log(`title ${title} desc ${desc}`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:60: Dekonstrukcja 5</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let [title,desc] = undefined;
+                    console.log(`title ${title} desc ${desc}`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught TypeError: undefined is not iterable
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:61: Dekonstrukcja 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let [title,desc] = null;
+                    console.log(`title ${title} desc ${desc}`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Składnia ES6:61: Dekonstrukcja 6</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 40px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 40px !important;">
+                    let [title,desc] = null;
+                    console.log(`title ${title} desc ${desc}`);
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        Uncaught TypeError: null is not iterable
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Podsumowanie</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Moduły JavaScript</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+                        &lt;title&gt;Szybki trening&lt;/title&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+                        &lt;script type=&quot;module&quot; src=&quot;/module-first.js&quot;   &gt;&lt;/script&gt;
+                        &lt;script type=&quot;module&quot; src=&quot;/main.js&quot; &gt;&lt;/script&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Moduły JavaScript</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    // Plik main.js
+                    import value from '/module-first.js';
+                    console.log(value);
+
+
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of US 2";
+                    let game = "Settlers";
+                    export default game;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ???
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Moduły JavaScript</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 30px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 30px !important;">
+                    class Solider {
+                        constructor() {
+                            console.log('buduje Solider');
+                        }
+                    }
+                    class SoftwareSolider extends Solider {
+                        constructor() {
+                            //super();
+                            console.log('buduje SoftwareSolider');
+                        }
+                    }
+                    let s = new SoftwareSolider();
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3>💡 Co pojawi się w konsoli ?</h3>
+            </div>
+            <div class="odpowiedz">
+                <pre style=" overflow: hidden; background-color: whitesmoke;;"
+                class="language-javascript">
+                    <code>
+                        ???
+                    </code>
+                </pre>
+            </div>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="0_tablice.html">1. Idziemy dalej do tablic</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="1_modules.html">2. Idziemy dalej do Modułów</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="3_Class.html">3. Idziemy dalej do Klas</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="4_MapSet.html">4. Idziemy dalej do Map,Set</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="5_Extensions.html">5. Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="6_Symbols.html">6. Symbols</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="7_ObjectExtensions.html">7. Object Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="8_Iterators.html">8. Iteratory</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="index.html">0. Początek</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+    <div class="progress" style="display: none;"></div>
+
+
+
+    <footer class="badge badge-top-left">
+        <a href="#" class="fullscreen">Fullscreen</a>
+    </footer>
+
+    <script src="vendors/gamepad/gamepad.js"></script>
+    <script src="vendors/shower/shower.min.js"></script>
+    <script src="vendors/shower-gamepad/shower.gamepad.js"></script>
+    <script src="vendors/shower-warsawjs/scripts/fullscreen.js"></script>
+
+    <!-- Prism.js -->
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/prism/custom-prism.js"></script>
+</body>
+</html>

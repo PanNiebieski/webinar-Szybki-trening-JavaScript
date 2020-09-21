@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Szybki trening JavaScript</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900&amp;subset=latin-ext" rel="stylesheet"/>
+
+    <!-- Shower Theme -->
+    <link rel="stylesheet" href="vendors/shower-ribbon/styles/screen-16x9.css"/>
+    <link rel="stylesheet" href="vendors/shower-warsawjs/styles/main.css"/>
+    <link rel="stylesheet" href="codegrid.css"/>
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="vendors/prism/prism copy.css"/>
+    <link rel="stylesheet" href="vendors/prism/custom-prism.css"/>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Szybki trening JavaScript</h1>
+        <p></p>
+    </header>
+
+   
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Moduły w JavaScript</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="grid-container">
+        <div class="HeaderTitle">
+            <h2>Moduły JavaScript: Przygotowanie</h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-html ">
+                <code style="line-height: 20px !important;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+                        &lt;title&gt;Szybki trening&lt;/title&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+                        &lt;script type=&quot;module&quot; src=&quot;/module-first.js&quot;   &gt;&lt;/script&gt;
+                        &lt;script type=&quot;module&quot; src=&quot;/main.js&quot; &gt;&lt;/script&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                
+                    &lt;/body&gt;
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3></h3>
+            </div>
+            <div class="odpowiedz">
+               
+            </div>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let followme = "On Twitter";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {followme} from '/module-first.js';
+                    console.log(followme);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 1</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let followme = "On Twitter";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {followme} from '/module-first.js';
+                    console.log(followme);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 1</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    On Twitter
+                </code>
+            </pre>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let followme = "On Twitter";
+                    export let worstGameEver = "Last of us 2";
+                    export let bestGameEver = "Silent Hill 2";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver,bestGameEver} 
+                    from '/module-first.js';
+
+                    console.log(`Najgorsza gra ${worstGameEver}
+                    , Najlepsza gra ${bestGameEver}`);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 2</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+      
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let followme = "On Twitter";
+                    export let worstGameEver = "Last of us 2";
+                    export let bestGameEver = "Silent Hill 2";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver,bestGameEver} 
+                    from '/module-first.js';
+
+                    console.log(`Najgorsza gra ${worstGameEver}
+                    , Najlepsza gra ${bestGameEver}`);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 2</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+            Najgorsza gra Last of us 2, 
+            Najlepsza gra Silent Hill 2
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let followme = "On Twitter";
+                    export let worstGameEver = "Last of us 2";
+                    export let bestGameEver = "Silent Hill 2";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver as bad, bestGameEver as good} 
+                    from '/module-first.js';
+
+                    console.log(`Najgorsza gra ${bad},
+                     Najlepsza gra ${good}`);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 3</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let followme = "On Twitter";
+                    export let worstGameEver = "Last of us 2";
+                    export let bestGameEver = "Silent Hill 2";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver as bad, bestGameEver as good} 
+                    from '/module-first.js';
+
+                    console.log(`Najgorsza gra ${bad},
+                     Najlepsza gra ${good}`);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 3</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+            Najgorsza gra Last of us 2, 
+            Najlepsza gra Silent Hill 2
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of US 2";
+                    console.log('jesteśmy w module-first.js');
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    console.log('zaczynamy w main.js');
+                    import {worstGameEver} from '/module-first.js';
+                    console.log('koniec w main.js');
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 4</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+ 
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of US 2";
+                    console.log('jesteśmy w module-first.js');
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    console.log('zaczynamy w main.js');
+                    import {worstGameEver} from '/module-first.js';
+                    console.log('koniec w main.js');
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 4</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    jesteśmy w module-first.js
+                    zaczynamy w main.js
+                    koniec w main.js
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of us 2";
+                    let game = "Settlers";
+                    export default game;
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import value from '/module-first.js';
+                    console.log(value);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 5</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of us 2";
+                    let game = "Settlers";
+                    export default game;
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import value from '/module-first.js';
+                    console.log(value);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 5</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    Settlers
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of us 2";
+                    let game = "Settlers";
+                    export default game;
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {default as game} from '/module-first.js';
+                    console.log(game);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 6</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    Settlers
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    let worstGameEver = "Last of US 2";
+                    let game = "Settlers";
+                    export {worstGameEver,game}
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import value from '/module-first.js';
+                    console.log(value);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 6</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    let worstGameEver = "Last of US 2";
+                    let game = "Settlers";
+                    export {worstGameEver,game}
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import value from '/module-first.js';
+                    console.log(value);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 6</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    undefined
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    let worstGameEver = "Last of US 2";
+                    let game = "Settlers";
+                    export {worstGameEver,game}
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import * as values from '/module-first.js';
+                    console.log(values);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 7</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    let worstGameEver = "Last of US 2";
+                    let game = "Settlers";
+                    export {worstGameEver,game}
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import * as values from '/module-first.js';
+                    console.log(values);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Moduły 7</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    Module {Symbol(Symbol.toStringTag): "Module"}
+                    game: "Settlers"
+                    worstGameEver: "Last of US 2"
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+
+
+
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <h2>Export</h2>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of US 2";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver} from '/module-first.js';
+                    
+                    worstGameEver = "E.T";
+                    console.log(worstGameEver);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Export 1</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = "Last of US 2";
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver} from '/module-first.js';
+                    
+                    worstGameEver = "E.T";
+                    console.log(worstGameEver);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Export 1</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    Runtime Error
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = {
+                        name : 'Last of US 2'
+                    };
+                    
+                    export function showGame() {
+                        console.log(worstGameEver.name);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver, showGame} from '/module-first.js';
+                    
+                    worstGameEver.name = "E.T";
+                    showGame();
+                    console.log(worstGameEver.name);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Export 3</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export let worstGameEver = {
+                        name : 'Last of US 2'
+                    };
+                    
+                    export function showGame() {
+                        console.log(worstGameEver.name);
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {worstGameEver, showGame} from '/module-first.js';
+                    
+                    worstGameEver.name = "E.T";
+                    showGame();
+                    console.log(worstGameEver.name);
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Export 3</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    E.T
+                    E.T
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export function showGame() {
+                        console.log('orginał');
+                    }
+                    export function updateShowGame() {
+                        showGame = function(){
+                            console.log('coś nowego');
+                        };
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {updateShowGame, showGame} from '/module-first.js';
+                    
+                    showGame();
+                    updateShowGame();
+                    showGame();;
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Export 3</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+
+        </div>
+      </div>
+</section>
+
+
+<section class="slide prism over bhgry">
+    <div class="module-grid-container">
+        <div class="module-CodeModule">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik module-first.js
+                    export function showGame() {
+                        console.log('orginał');
+                    }
+                    export function updateShowGame() {
+                        showGame = function(){
+                            console.log('coś nowego');
+                        };
+                    }
+                </code>
+            </pre>
+        </div>
+        <div class="    module-CodeMain">
+            <pre style="font-size: 20px;overflow: hidden;  " class="language-javascript ">
+                <code style="line-height: 20px !important;">
+                    // Plik main.js
+                    import {updateShowGame, showGame} from '/module-first.js';
+                    
+                    showGame();
+                    updateShowGame();
+                    showGame();;
+                </code>
+            </pre>
+        </div>
+    
+        <div class="module-HeaderText"><h2>Export 3</h2></div>
+        <div class="module-Question"><h3>💡 Co pojawi się w konsoli ?</h3></div>
+        <div class="module-Answer">
+            <pre style=" overflow: hidden; background-color: whitesmoke;"
+            class="language-javascript">
+                <code >
+                    orginał
+                    coś nowego
+            </code>
+            </pre>
+        </div>
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="0_tablice.html">1. Idziemy dalej do tablic</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="1_modules.html">2. Idziemy dalej do Modułów</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="3_Class.html">3. Idziemy dalej do Klas</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="4_MapSet.html">4. Idziemy dalej do Map,Set</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="5_Extensions.html">5. Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="6_Symbols.html">6. Symbols</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="7_ObjectExtensions.html">7. Object Extensions</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="8_Iterators.html">8. Iteratory</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+<section class="slide prism over bhgry" >
+    <div class="Main-grid-container ">
+        <div class="Main-Background1 ">
+        </div>
+        <div class="Main-Text">
+            <a href="index.html">0. Początek</a>
+        </div>
+        <div class="Main-Background2">
+      </div>
+</section>
+
+    <div class="progress" style="display: none;"></div>
+
+
+
+    <footer class="badge badge-top-left">
+        <a href="#" class="fullscreen">Fullscreen</a>
+    </footer>
+
+    <script src="vendors/gamepad/gamepad.js"></script>
+    <script src="vendors/shower/shower.min.js"></script>
+    <script src="vendors/shower-gamepad/shower.gamepad.js"></script>
+    <script src="vendors/shower-warsawjs/scripts/fullscreen.js"></script>
+
+    <!-- Prism.js -->
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/prism/custom-prism.js"></script>
+</body>
+</html>
